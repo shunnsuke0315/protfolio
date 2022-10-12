@@ -1,0 +1,249 @@
+@charset "UTF-8";
+img{
+    width:100%;
+}
+body{
+    background-color:#82aaaa;
+    margin:0;
+    font-family: 'Crimson Text', serif;
+}
+
+/*header*/
+.nav ul{
+    display: flex;
+    justify-content: right;
+    background-color:#dddddd;
+    padding:20px 0;
+    margin-top:0;
+}
+.nav li{
+    padding-right:5%;
+    list-style: none;
+}
+.nav a{
+    text-decoration: none;
+    color:black;
+}
+
+
+/*main*/
+/*home*/
+
+.flex{
+    display: flex;
+    justify-content:space-around;
+    width:60%;
+    margin: 0 auto;
+    align-items:center;
+    margin-top:10%;
+    margin-bottom: 10%;
+    padding: 20px;
+    background-color:#dddddd;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5) ;  
+    overflow: hidden;
+}
+
+.article{
+    width: 40%;
+    text-align: center; 
+}
+
+.aside{
+    width: 50%;
+}
+.name{
+    margin-bottom: 0;
+    font-size: 1.3rem;
+}
+.name span{
+    padding-left:3%;
+    font-size: 0.3rem;
+}
+.school, .from, .birth, .gihhub, .text{
+    font-size: 0.8rem;
+}
+.scroll{
+    text-align: center;
+    margin-bottom:10%;
+    margin-top:0;
+}
+
+
+/*skills*/
+.skills{
+    width: 90%;
+    margin:0 auto;
+    margin-top:10%;
+}
+.title{
+    position: relative;
+    margin-left: 50px;
+}
+.title h1{
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.title h2{
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    font-size: 3rem;
+    margin-bottom: 5%;
+}
+.contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.content{
+    background-color:#dddddd;
+    margin-bottom:2%;
+    width: 25%;
+    padding:3%;
+    border-radius: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+.content img{
+    width: 70px;
+    height: 70px;
+}
+.content .logo{
+    text-align: center;
+}
+.content h3{
+    text-align: center;
+}
+
+
+/*products*/
+.products{
+    width: 90%;
+    margin:0 auto;
+    margin-top:10%;
+}
+
+.products h1{
+
+}
+.products h3{
+    font-size: 2rem;
+    text-align: center;
+}
+.work-contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.work-content img{
+    width: 300px;
+    height: 300px;
+}
+.work-content figcaption , .work-content p{
+    text-align: center;
+}
+.applications{
+    margin-top:10%;
+}
+
+/*footer*/
+footer{
+    margin-top:12%;
+    margin-bottom: 3%;
+}
+.foo a{
+    display: block;
+    text-align: center;
+}
+.foo img{
+    width: 30px;
+    height: 30px;
+}
+
+
+@media (max-width:960px) {
+
+    *{
+        box-sizing: border-box;
+    }
+    /*home*/
+    .flex{
+        display: block;
+    }
+    .article{
+        width:40%;
+        margin: 0 auto;
+    }
+    .aside{
+        width:100%;
+        margin:0 auto;
+        text-align: center;
+    }
+    .scroll{
+        display: none;
+    }
+
+    /*skills*/
+    .title h2{
+        text-align: center;
+    }
+    .contents{
+        display: block;
+        width:65%;
+        margin:0 auto;
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        align-items:center;
+        border-radius:0%; 
+    }
+    .logo {
+        width: 25%;
+    }
+    .explanation{
+       width: 70%;
+    }
+      
+    .explanation h3{
+        text-align: left;
+    }
+
+    /*products*/
+    .work-contents{
+        display: block;
+    }
+    .work-content a{
+        display: block;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+@media (max-width:520px) {
+
+    /*home*/
+    .photo img{
+        border-radius: 50%;
+    }
+    /*skills*/
+    .content{
+        display: block;
+        border-radius: 5%;
+    }
+    .content h2{
+        text-align: center;
+    }
+
+
+
+    
+}
